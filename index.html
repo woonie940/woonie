@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩네컷</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* body태그 자체에 css 요소 부여 */
+        body {
+	    font-family: "LeeSeoyun";
+	    margin: 0;
+	    display: flex;
+	    justify-content: center;
+	    background-image: url("./background.png");
+        }
+      /* container태그 자체에 css 요소 부여 */
+        .container {
+            width: 390px;
+            background-color: #ff9d73;
+            height: 100%;
+        }
+      /* photos태그 자체에 css 요소 부여 */
+      .photos {
+        margin-top: 30px;
+      }
+      .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+        background-size: cover;
+        position: relative;
+        transition: transform 0.2s ease-in-out; /* 트랜지션 효과 추가 */
+      }
+      .photo-frame:hover {
+        transform: scale(1.05); /* 마우스를 올렸을 때 확대 */
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .f-title {
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+      }
+      #image1 {
+        background-image: url('./KakaoTalk_20240330_152842172.jpg');
+      }
+      #image2 {
+        background-image: url('./KakaoTalk_20240330_152842172_01.jpg');
+      }
+      #image3 {
+        background-image: url('./KakaoTalk_20240330_152842172_02.jpg');
+      }
+      #image4 {
+        background-image: url('./KakaoTalk_20240330_152842172_03.jpg');
+      }
+      .photo_description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    전투준비중
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                    전투함 타본날
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                    분좋카 베이글
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                    한강에서 취한날
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">Happy 소짜우동 Time</p>
+            <p class="f-date">2024.03.23</p>
+        </div>
+    </div>
+</body>
+</html>
